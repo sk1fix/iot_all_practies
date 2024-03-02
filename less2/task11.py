@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-R, r = 5, 3
+R, r = 5, 3 
 phi = np.linspace(0, 2*np.pi, 100)
 teta = np.linspace(0, 2*np.pi, 100)
 phi,teta=np.meshgrid(phi,teta)
