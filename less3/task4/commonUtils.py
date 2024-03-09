@@ -1,12 +1,12 @@
-from slugConverter import SlugConverter
+
 
 
 from unidecode import unidecode
 
 
-class CommonUtils(SlugConverter):
-    def __init__(self, file_name, slug_list) -> None:
-        super().__init__(file_name, slug_list)
+class CommonUtils():
+    def __init__(self) -> None:
+        pass
     
     @staticmethod
     def translit_to_eng(s):
@@ -23,4 +23,5 @@ class CommonUtils(SlugConverter):
     def add_to_file(file_name, slug_list):
         f=open(file_name, "w")
         for i in slug_list:
-            f.write(translit_to_eng(i))
+            f.write(CommonUtils.translit_to_eng(i))
+            f.write('\n')  
