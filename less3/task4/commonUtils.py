@@ -1,28 +1,7 @@
+from slugConverter import SlugConverter
+
+
 from unidecode import unidecode
-
-
-def translit_to_eng(s):
-    slag = ''
-    for i in s:
-        if i == ' ':
-            slag += '-'
-        else:
-            slag += unidecode(i).lower()
-    return slag
-
-
-class SlugConverter():
-    def __init__(self) -> None:
-        self.file_name = input()
-        self.slug_list = []
-        self.run()
-
-    def run(self):
-        while (True):
-            a = input()
-            if not a:
-                break
-            self.slug_list.append(a)
 
 
 class CommonUtils(SlugConverter):
