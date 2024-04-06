@@ -1,1 +1,1 @@
-import skipy
+from scipy.integrate import odeint
