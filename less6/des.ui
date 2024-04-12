@@ -79,23 +79,23 @@
      <string>Настройки</string>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>80</y>
-      <width>421</width>
-      <height>301</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QWidget" name="widget_2" native="true">
     <property name="geometry">
      <rect>
       <x>670</x>
-      <y>90</y>
+      <y>70</y>
       <width>281</width>
       <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>521</width>
+      <height>391</height>
      </rect>
     </property>
    </widget>
